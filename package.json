@@ -1,8 +1,8 @@
 {
-  "name": "radiant-js",
-  "productName": "Radiant Editor",
+  "name": "your-project-here-js",
+  "productName": "CHANGE ME",
   "version": "0.0.1",
-  "description": "Javascript Game Editor",
+  "description": "CHANGE ME DESC",
   "main": "./electron-main.bundle.js",
   "scripts": {
     "start": "npm run clean && npm run-script build && npm run-script start:electron",
@@ -24,12 +24,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/apolaskey/radiant-js.git"
+    "url": "https://github.com/apolaskey/personal-electron-boilerplate.git"
   },
   "keywords": [
     "electron",
     "react",
-    "game-editor"
+    "webpack",
   ],
   "xo": {
     "space": 4,
