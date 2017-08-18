@@ -29,7 +29,7 @@
   "keywords": [
     "electron",
     "react",
-    "webpack",
+    "webpack"
   ],
   "xo": {
     "space": 4,

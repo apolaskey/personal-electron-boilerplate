@@ -5,10 +5,9 @@
 [![Known Vulnerabilities](https://snyk.io/test/github/apolaskey/personal-electron-boilerplate/badge.svg)](https://snyk.io/test/github/apolaskey/personal-electron-boilerplate)
 [![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/sindresorhus/xo)
 [![Unix Status](https://travis-ci.org/apolaskey/personal-electron-boilerplate.svg?branch=master)](https://travis-ci.org/apolaskey/personal-electron-boilerplate)
-[![Windows Status](https://ci.appveyor.com/api/projects/status/4fnobuo3n4adrkit?svg=true&retina=true&branch=master)](https://ci.appveyor.com/project/AndrewPolaskey/personal-electron-boilerplate)
 
 # Motivation
-To create a boilerplate to rule them all (kidding; but one that just works with not too much cruft)
+To create a boilerplate for rapid prototyping of ideas with a fairly robust platform
 
 # Completed / Planned Feature List
 - [x] Electron Installation and Setup
@@ -18,17 +17,24 @@ To create a boilerplate to rule them all (kidding; but one that just works with 
 - [x] Babel w/ES6 + 7 support
 - [ ] Spectron (Electron Functional Testing)
 - [x] Ava (Concurrent Test Runner)
-- [x] Windows Releases Automated (Appveyor CI)
-- [x] Unix (Linux / OSX) Releases Automated (Travis CI)
-- [ ] Github Release pushes automated
-- [ ] Yeoman Scaffolding Support (On Hold)
-- [x] Webpack Integration*
-- [x] Winston Logger Support
+- [x] Webpack Integration
+- [x] BluebrintJS Integration (React Components)
+- [x] Bulma CSS Integration (Grid Framework support largely)
 - [ ] Electron Persistent Store Support (Configs)
 
 
 ## Developing
 The below should over a no bullshit setup experience if followed; otherwise open an issue and let me know what you encountered.
+
+## Usage
+To make this feel like your project the following actions should be done
+
+* Fork or clone + copy files to a new repository
+* Edit "package.json" and change the following JSON fields: ``author`` ``name`` ``productName`` ``description`` ``repository -> url``
+* Edit "index.ejs" with a new title (This is an HTML template to bootstrap the application off of)
+* From here you can follow the frontend application flow starting from ``app -> index.jsx``
+* Electron application flow will always start at ``app -> main.js``
+* ANY QUESTIONS YOU CAN JUST OPEN AN ISSUE :)
 
 ### First Time Setup
 
@@ -87,18 +93,17 @@ Application routing is configured at ``app/renderer/editor-routes.js``
 
 # Known Issues
 
-Error Like: ``cross-env not available``
-* To fix run ``npm rebuild`` this is required because your likely carrying project files between multiple
-OS variants
+Working from a synchronized workspace:
+* If your working out of a dropbox folder on multiple machines you may need to remove the node_modules folder and reinstall
+when switching between Windows / Mac / Linux you can quickly attempt an ``npm rebuild`` but I can't gurantee it will work.
 
 White page when running ``npm run start-dev``
 * This usually happens if the Electron Window is minimized while Webpack is building out the HMR server
 just refresh the page (Ctrl/Cmd R or View -> Reload)
 
 Webpack HMR not working for index.ejs or index.js
-* I don't believe it's possible to get around this without jumping through some crazy hoops.
-This is because when launching Electron via the CLI it expects some assets to be available to open
-the main window. For the sake of simplicity this is going to be left alone.
+* I didn't spend a ton of effort getting these to be replaceable just because it's rare to go in here and Electron
+requires these to be present on startup.
 
 Warning like: ``npm WARN invalid config loglevel="notice"``
 * To fix the above just run ``npm config set loglevel warn`` the above occurs on Windows environments
