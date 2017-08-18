@@ -1,0 +1,20 @@
+language: node_js
+node_js:
+  - "6"
+
+git:
+  depth: 3
+
+os:
+  - linux
+  - osx
+
+install:
+  - npm install
+  - npm run-script build
+  - npm test
+  - npm run-script it-test
+
+after_success:
+  - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then npm run-script package:osx; fi
+  - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then npm run-script package:linux; fi
