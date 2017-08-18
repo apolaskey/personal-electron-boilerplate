@@ -1,16 +1,14 @@
-# Radiant.JS
-
-[![Gitter](https://badges.gitter.im/apolaskey/radiant-js.svg)](https://gitter.im/apolaskey/radiant-js?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
-[![Dependencies](https://david-dm.org/apolaskey/radiant-js.svg)](https://david-dm.org/apolaskey/radiant-js#info=dependencies)
-[![img](https://david-dm.org/apolaskey/radiant-js/dev-status.svg)](https://david-dm.org/apolaskey/radiant-js/#info=devDependencies)
-[![img](https://david-dm.org/apolaskey/radiant-js/peer-status.svg)](https://david-dm.org/apolaskey/radiant-js/#info=peerDependenciess)
-[![Known Vulnerabilities](https://snyk.io/test/github/apolaskey/radiant-js/badge.svg)](https://snyk.io/test/github/apolaskey/radiant-js)
+[![Gitter](https://badges.gitter.im/apolaskey/personal-electron-boilerplate.svg)](https://gitter.im/apolaskey/personal-electron-boilerplate?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+[![Dependencies](https://david-dm.org/apolaskey/personal-electron-boilerplate.svg)](https://david-dm.org/apolaskey/personal-electron-boilerplate#info=dependencies)
+[![img](https://david-dm.org/apolaskey/personal-electron-boilerplate/dev-status.svg)](https://david-dm.org/apolaskey/personal-electron-boilerplate/#info=devDependencies)
+[![img](https://david-dm.org/apolaskey/personal-electron-boilerplate/peer-status.svg)](https://david-dm.org/apolaskey/personal-electron-boilerplate/#info=peerDependenciess)
+[![Known Vulnerabilities](https://snyk.io/test/github/apolaskey/personal-electron-boilerplate/badge.svg)](https://snyk.io/test/github/apolaskey/personal-electron-boilerplate)
 [![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/sindresorhus/xo)
-[![Unix Status](https://travis-ci.org/apolaskey/radiant-js.svg?branch=master)](https://travis-ci.org/apolaskey/radiant-js)
-[![Windows Status](https://ci.appveyor.com/api/projects/status/4fnobuo3n4adrkit?svg=true&retina=true&branch=master)](https://ci.appveyor.com/project/AndrewPolaskey/radiant-js)
+[![Unix Status](https://travis-ci.org/apolaskey/personal-electron-boilerplate.svg?branch=master)](https://travis-ci.org/apolaskey/personal-electron-boilerplate)
+[![Windows Status](https://ci.appveyor.com/api/projects/status/4fnobuo3n4adrkit?svg=true&retina=true&branch=master)](https://ci.appveyor.com/project/AndrewPolaskey/personal-electron-boilerplate)
 
 # Motivation
-To create a game editor utilizing Javascript and Electron; building ontop of the shoulders of giants.
+To create a boilerplate to rule them all (kidding; but one that just works with not too much cruft)
 
 # Completed / Planned Feature List
 - [x] Electron Installation and Setup
