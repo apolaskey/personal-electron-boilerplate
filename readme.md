@@ -4,7 +4,6 @@
 [![img](https://david-dm.org/apolaskey/personal-electron-boilerplate/peer-status.svg)](https://david-dm.org/apolaskey/personal-electron-boilerplate/#info=peerDependenciess)
 [![Known Vulnerabilities](https://snyk.io/test/github/apolaskey/personal-electron-boilerplate/badge.svg)](https://snyk.io/test/github/apolaskey/personal-electron-boilerplate)
 [![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/sindresorhus/xo)
-[![Unix Status](https://travis-ci.org/apolaskey/personal-electron-boilerplate.svg?branch=master)](https://travis-ci.org/apolaskey/personal-electron-boilerplate)
 
 # Motivation
 To create a boilerplate for rapid prototyping of ideas with a fairly robust platform
